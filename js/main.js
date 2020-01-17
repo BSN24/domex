@@ -154,5 +154,17 @@ $(function(){
 });
 /* end 4 banners call btn */
 
+	$(".card-slider__list").owlCarousel({
+		items: 1,
+		dots: false,
+		nav: true
+	});
+
+	$("[data-fancybox]").fancybox({
+		buttons: [
+			"close"
+		],
+	});
+
 });
 

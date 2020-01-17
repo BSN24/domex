@@ -202,94 +202,66 @@
     <div class="cntn white_cn clear">
         <div style="height: 400px; display: none; Background: url(https://www.domex.ru/bitrix/components/domex/search/templates/.default/domex/news.detail/.default/img/preloder.gif) center center no-repeat;" id="YMapsID" class="map_objext_cn"></div>
 
-        <style>
-            .column_ph {
-                position: relative;
-            }
-
-            .photo_object {
-                margin-bottom: 0;
-            }
-
-            .panel_bottom_photo {
-                margin-top: 16px;
-            }
-
-            .ph_dv {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                z-index: 2;
-            }
-
-            .ph_dv a {
-                display: block;
-                color: white;
-                padding: 16px;
-                text-decoration: none;
-                background-color: rgba(0, 0, 0, 0.5);
-                content: ' ';
-                clear: both;
-            }
-
-            .ph_dv a img {
-                display: none;
-            }
-
-            .ph_dv a .i {
-                float: left;
-                width: 20%;
-                margin-right: 8px;
-            }
-
-            .ph_dv a .i img {
-                width: 100%;
-                display: block;
-            }
-
-            .ph_dv a b {
-                display: block;
-                font-size: 18px;
-            }
-
-            .ph_dv a .t {
-                display: block;
-            }
-
-            .openphoto .ph_dv {
-                position: relative;
-                margin: 16px 0;
-            }
-
-            .openphoto .ph_dv a b {
-                font-size: 24px;
-            }
-
-            .openphoto .ph_dv a .t {
-                font-size: 18px;
-            }
-        </style>
-
-
         <div class="object_block">
             <div class="column_ph">
-                <div class="photo_object">
-                    <div class="g_photo">
-                        <img alt=" " src="https://www.domex.ru/upload/resize_cache/iblock/79b/450_350_0/79b81a7a1d169e5341b3b08d210257be.jpg">
-                    </div>
-                    <div class="other_photo">
-                        <img alt=" " src="https://www.domex.ru/upload/iblock/de2/de2c6d03d874a6bf777b548d8eaf9300.jpg">
-                        <img alt=" " src="https://www.domex.ru/upload/iblock/dc6/dc6bde4ef79e72479b6e85b6960bedce.jpg">
-                        <img alt=" " src="https://www.domex.ru/upload/iblock/8b3/8b36931211e44475545226ff767ccf1c.jpg">
-                        <img alt=" " src="https://www.domex.ru/upload/iblock/72d/72d0126e5240aa31de50df09b47a7a96.jpg">
-                        <img alt=" " src="https://www.domex.ru/upload/iblock/a16/a162e2bdd54ec4547922d8858a033e0c.jpg">
-                        <img alt=" " src="https://www.domex.ru/upload/iblock/ac1/ac136688466880f50dbfd8a3077100d4.jpg">
-                    </div>
+
+                <!--Добавил слайдер фотографий-->
+                <div class="card-slider">
+                    <ul class="card-slider__list owl-carousel">
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/resize_cache/iblock/79b/450_350_0/79b81a7a1d169e5341b3b08d210257be.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/resize_cache/iblock/79b/450_350_0/79b81a7a1d169e5341b3b08d210257be.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/iblock/de2/de2c6d03d874a6bf777b548d8eaf9300.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/iblock/de2/de2c6d03d874a6bf777b548d8eaf9300.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/iblock/dc6/dc6bde4ef79e72479b6e85b6960bedce.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/iblock/dc6/dc6bde4ef79e72479b6e85b6960bedce.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/iblock/8b3/8b36931211e44475545226ff767ccf1c.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/iblock/8b3/8b36931211e44475545226ff767ccf1c.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/iblock/72d/72d0126e5240aa31de50df09b47a7a96.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/iblock/72d/72d0126e5240aa31de50df09b47a7a96.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/iblock/a16/a162e2bdd54ec4547922d8858a033e0c.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/iblock/a16/a162e2bdd54ec4547922d8858a033e0c.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="card-slider__item">
+                            <a href="https://www.domex.ru/upload/iblock/ac1/ac136688466880f50dbfd8a3077100d4.jpg" class="card-slider__link" data-fancybox="gallery">
+                                <img src="https://www.domex.ru/upload/iblock/ac1/ac136688466880f50dbfd8a3077100d4.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
+                <!--Удалить старый блок просмотра фотографий-->
+                <!-- <div class="photo_object">-->
+                <!--     <div class="g_photo">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/resize_cache/iblock/79b/450_350_0/79b81a7a1d169e5341b3b08d210257be.jpg">-->
+                <!--     </div>-->
+                <!--     <div class="other_photo">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/iblock/de2/de2c6d03d874a6bf777b548d8eaf9300.jpg">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/iblock/dc6/dc6bde4ef79e72479b6e85b6960bedce.jpg">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/iblock/8b3/8b36931211e44475545226ff767ccf1c.jpg">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/iblock/72d/72d0126e5240aa31de50df09b47a7a96.jpg">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/iblock/a16/a162e2bdd54ec4547922d8858a033e0c.jpg">-->
+                <!--         <img alt=" " src="https://www.domex.ru/upload/iblock/ac1/ac136688466880f50dbfd8a3077100d4.jpg">-->
+                <!--     </div>-->
+                <!-- </div>-->
                 <!-- рекламный блок -->
             </div>
-
 
             <div class="column_detail">
                 <a href="#YMapsID" class="show_map">Показать на карте</a>
@@ -332,9 +304,10 @@
             </div>
 
             <div class="about_object">
-                <div class="panel_bottom_photo">
-                    <span class="show_all_photo">Ещё 6 фотографий</span>
-                </div>
+                <!--Удалить кнопку еще фотографии-->
+                <!-- <div class="panel_bottom_photo">-->
+                <!--     <span class="show_all_photo">Ещё 6 фотографий</span>-->
+                <!-- </div>-->
                 Общая площадь квартиры 74,8 м (без учета лоджий). 4-ре изолированные комнаты (17+13+12+10), кухня 8,2 м.
                 Планировка распашенка (две комнаты на улицу, две комнаты и кухня во двор). Окна во двор - на север, окна
                 на улицу - юг. Широкий прямой коридор, стенной шкаф, антресоль. 3 лоджии (две в комнатах, одна на
@@ -376,6 +349,7 @@
                 <br>
                 Показы строго по предварительной записи.
             </div>
+
         </div>
 
         <div class="four_block vfb">
@@ -385,14 +359,15 @@
             </p>
         </div>
 
-
         <div class="other_object">
-            <br>
+            <!--Удалить блок <br>-->
+            <!--<br>-->
             <!-- Yandex.RTB R-A-54943-5 -->
             <b class="oo_h">
                 Похожие объявления
             </b>
 
+            <!--Сделать вывод блоков block_obj в один блок clear, сделать вывод по 8 объектов-->
             <div class="clear">
                 <div class="block_obj " id="bx_3218110189_16275135">
                     <a class="bo_l" href="https://www.domex.ru/msk/prodazha/kvartir/16275135.html">
@@ -464,9 +439,7 @@
 			            </span>
                     </a>
                 </div>
-            </div>
 
-            <div class="clear">
                 <div class="block_obj " id="bx_3218110189_16144030">
                     <a class="bo_l" href="https://www.domex.ru/msk/prodazha/kvartir/16144030.html">
 						<span style="background-image: url(https://www.domex.ru/upload/resize_cache/iblock/63c/276_236_2/63c7c32240d1ead939d79d9038f2ac2a.JPG);" class="bo_img"></span>
@@ -528,33 +501,15 @@
                     </a>
                 </div>
             </div>
-            <div class="clear"></div>
+
+        <!--Удалить блок clear т.к там ничего не выводится-->
+        <!--<div class="clear"></div>-->
         </div>
 
     </div>
     <!-- end of main Container -->
 
     <div class="clear cntn">
-        <br><br>
-        <style>
-            /*.ya_dir_block {
-                float: left;
-                width: 25%;
-                text-align: center;
-                margin-bottom: 32px;
-            }
-            @media all and (max-width: 860px) {
-                .ya_dir_block {
-                    width: 50%;
-                }
-            }
-            @media all and (max-width: 480px) {
-                .ya_dir_block {
-                    width: 100%;
-                }
-            }*/
-        </style>
-
         <div id="yandex_ad_" class="ya_dir_block">
             <!-- Yandex.RTB R-A-54943-9 -->
             <div id="yandex_rtb_R-A-54943-9"></div>
@@ -668,9 +623,14 @@
         </div>
     </footer>
 
+    <!--Заменил jquery старой версии на новую, т.к криво работали плагины карусели-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!--Добавил owl.carousel.min.js-->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <!--Добавил jquery.fancybox.min.js-->
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
-    <script type="text/javascript" src="https://www.domex.ru/_v15/js/jquery.js"></script>
-    <script type="text/javascript" src="https://www.domex.ru/_v15/js/main.js"></script>
     <script type="text/javascript">if (!window.BX) window.BX = {};
     if (!window.BX.message) window.BX.message = function (mess) {
         if (typeof mess == "object") for (var i in mess) BX.message[i] = mess[i];
