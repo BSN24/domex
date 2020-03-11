@@ -156,7 +156,7 @@ $(function(){
 
 	$(".card-slider__list").owlCarousel({
 		items: 1,
-		dots: false,
+		dots: true,
 		nav: true
 	});
 
